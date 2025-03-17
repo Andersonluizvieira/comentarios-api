@@ -46,10 +46,25 @@ O projeto é uma **API RESTful** que permite aos usuários **enviar e listar com
 
 ---
 
+## 5. **Aditivos**
 
-## 5. **Conclusão**
+### 5.1.: **Monitoramento com Prometheus e Grafana**
+- Embora o monitoramento não tenha sido implementado nesta versão, em um cenário de produção, seria interessante integrar o **Prometheus** para coletar métricas sobre a aplicação, como o tempo de resposta, quantidade de requisições e erros.
+- **Grafana** seria utilizado para visualizar essas métricas de forma interativa e criar **dashboards** para facilitar a análise de desempenho e saúde da aplicação.
+
+### 5.2. **Uso de Kong API Gateway**
+- Em um cenário de produção mais robusto, o uso de um **API Gateway** como o **Kong** poderia ser considerado. O Kong forneceria funcionalidades importantes como **autenticação** de usuários (JWT, OAuth2), **rate limiting** para proteger a API de abusos, e **balanceamento de carga** para garantir a distribuição eficiente das requisições.
+- O **Kong** também pode ajudar no **monitoramento de APIs** com métricas detalhadas, além de melhorar a segurança e a escalabilidade do sistema à medida que o número de APIs e usuários cresce.
+
+---
+
+
+## 6. **Conclusão**
 
 A aplicação foi construída de forma simples, mas eficiente, utilizando **Flask**, **Gunicorn** e **Docker**. O deploy foi automatizado com **GitHub Actions**, garantindo que a aplicação seja sempre atualizada e implantada sem erros. Se tivesse mais tempo, teria integrado um **banco de dados** e implementado **autenticação**.
+
+---
+
 
 ---
 
